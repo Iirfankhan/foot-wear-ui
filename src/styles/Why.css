@@ -1,0 +1,39 @@
+.why-wrapper {
+  background-color: #3761cd; /* Light background */
+  padding: 2rem ;
+  margin-top: 30px;
+}
+
+.why-title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffff;
+  padding-top: 30px;
+}
+
+.why-card {
+  text-align: center;
+  padding: 1rem;
+  max-width: 250px;
+  width: 100%;
+}
+
+.why-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.why-card h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.why-card p {
+  font-size: 1rem;
+  color: #fff;
+}

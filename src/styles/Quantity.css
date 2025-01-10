@@ -1,0 +1,78 @@
+/* Quantity Component Styling */
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons and number */
+    margin: 10px 0;
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.quantity span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Fixed width for buttons */
+    height: 40px; /* Fixed height for buttons */
+    border: 2px solid #007bff; /* Bluish border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    color: #007bff; /* Bluish text */
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.quantity span:hover {
+    background-color: #007bff; /* Change background to blue */
+    color: white; /* Change text color to white */
+}
+
+.quantity span.disabled {
+    background-color: #ccc; /* Disabled background color */
+    color: #666; /* Disabled text color */
+    cursor: not-allowed;
+}
+
+/* Quantity Text Styling */
+.quantity p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .quantity {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 8px; /* Reduce spacing */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .quantity span {
+        width: 35px; /* Adjust width */
+        height: 35px; /* Adjust height */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .quantity p {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .quantity {
+        gap: 6px; /* Further reduce spacing */
+        font-size: 0.8rem; /* Smaller text size */
+    }
+
+    .quantity span {
+        width: 30px; /* Smaller buttons */
+        height: 30px; /* Smaller buttons */
+        font-size: 0.7rem; /* Smaller font size */
+    }
+
+    .quantity p {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}

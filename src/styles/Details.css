@@ -1,0 +1,136 @@
+/* Details Section Styling */
+.details-container {
+    height: auto; /* Make it flexible instead of fixed height */
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping for responsiveness */
+    padding: 3.5rem 0.5rem; /* Adjusted padding for spacing */
+    gap: 2rem; /* Gap between left and right sections */
+    background-color: #f9f9f9; /* Light background */
+    box-sizing: border-box; /* Include padding in height/width calculations */
+}
+
+/* Left Section */
+.left {
+    flex: 1; /* Occupies half width in large screens */
+    
+    display: flex; /* Centers the image */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%;
+}
+
+.left img {
+    width: 100%; /* Responsive image */
+    max-width: 500px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Right Section */
+.right {
+    flex: 1; /* Occupies half width in large screens */
+    display: flex;
+     height: 100%;
+    flex-direction: column; /* Stack content vertically */
+    /* justify-content: center; /* Center vertically */
+    gap: 1rem; 
+}
+
+.right h1 {
+    font-size: 2.5rem; /* Larger font size for heading */
+    color: #333; /* Dark text color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+.price-div{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    margin: 1rem 0rem;
+}
+.price-div span{
+    margin: 10px;
+
+}
+.originl-price{
+    font-size: 20px;
+    color: #7b7878;
+    text-decoration: line-through;
+    letter-spacing: 2px;
+}
+.sal-price{
+    font-size: 20px;
+    color: #007b00;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.sale{
+    background-color:  #0056ff;
+    color: white;
+    padding: 3px 15px;
+    font-size: 14px;
+    
+}
+.size-selector{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+  
+.size-selector span{
+display: block;
+font-size: 16px;
+color: #7b7878;
+/* margin-bottom: 5px; */
+
+
+}
+.size-button{
+    outline: none;
+    margin-left: 1.2rem;
+    padding: 5px 22px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+    background-color: #fff;
+     cursor: pointer;
+    transition: all 0.3s ease;
+    /* flex: 1; */
+    text-align: center;
+    margin-top: 15px;
+
+}
+.size-button.active {
+    background-color: #1e3462; /* Bluish background */
+    color: white; /* White text */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .size-button {
+        padding: 8px 16px; /* Smaller padding */
+        font-size: 0.9rem; /* Reduce font size */
+        flex: 1 1 calc(20% - 10px); /* Two buttons per row with gap */
+        margin-top: 20px;
+    }
+    .right h1{
+        font-size: 1.5rem;
+    }
+    .button-dev{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .size-button {
+        padding: 6px 12px; /* Even smaller padding */
+        font-size: 0.8rem; /* Smaller font size */
+        flex: 1 1 calc(30% - 10px); /* One button per row */
+    }
+}

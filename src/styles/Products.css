@@ -1,0 +1,46 @@
+.title {
+  padding: 2.5rem 0rem 0rem 2.5rem;
+}
+
+/* Title Styling */
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .title {
+    padding: 2rem 0rem 0rem 2rem; /* Slightly reduce padding */
+  }
+  .title h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    padding: 1.5rem 0rem 0rem 1.5rem; /* Further reduce padding */
+  }
+  .title h1 {
+    font-size: 1.8rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    padding: 1rem 0rem 0rem 1rem; /* Less padding for small screens */
+  }
+  .title h1 {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    padding: 1rem 0rem 0rem 2rem; /* Minimal padding for extra small screens */
+  }
+  .title h1 {
+    font-size: 1.5rem; /* Compact font size */
+  }
+}

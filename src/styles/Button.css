@@ -1,0 +1,83 @@
+/* Base Button Styling */
+.btnn {
+    padding: 15px 30px !important;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    border: none;
+    display: inline-block; /* Ensure it doesn't stretch full width */
+    width: 25rem; /* Enbordersure width adjusts to content */
+    border-radius: 20px;
+    margin-top: 1rem;
+    
+
+}
+
+/* Button Types */
+.btn-primry {
+    background-color: #327ac6; /* Bluish background */
+    color: white; /* White text */
+}
+.btn-transparent {
+    background-color: transparent; /* Bluish background */
+    color: black; /* White text */
+    border: 1px solid black;
+}
+
+.btn-secondary {
+    background-color: rgb(128, 169, 234); /* Gray background */
+    color: white; /* White text */
+}
+
+.btn-success {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+}
+
+/* Hover Effects */
+.btn:hover {
+    opacity: 0.9; /* Slightly dim the button */
+}
+
+.btn:disabled,
+.btn-disabled {
+    background-color: #ccc; /* Disabled background color */
+    color: #666; /* Disabled text color */
+    cursor: not-allowed; /* Disable pointer */
+}
+
+/* Button Sizes */
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.btn-medium {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width:768px) {
+    .btnn{
+        padding: 10px 30px !important;
+    font-size: 1rem;
+    
+    width: 20rem; 
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    }
+    
+}

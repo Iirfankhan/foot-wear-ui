@@ -1,0 +1,51 @@
+/* About Us Page Styling */
+.about-container {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row; /* Align content horizontally */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between text and image */
+    padding: 50px; /* Add padding */
+    gap: 20px; /* Space between elements */
+    background-color: #fff; /* Light background */
+    min-height: 100vh; /* Full viewport height */
+    box-sizing: border-box; /* Include padding in height/width */
+}
+
+/* Text Section Styling */
+.about-content {
+    flex: 1; /* Take up 50% of space */
+    padding-right: 20px;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    color: #e53935; /* Primary color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #333; /* Dark text color */
+    line-height: 1.8; /* Increase line spacing */
+    margin-bottom: 20px;
+}
+
+/* Image Section Styling */
+.about-image {
+    flex: 1; /* Take up 50% of space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%; /* Ensure image scales properly */
+    border-radius: 10px; /* Rounded corners */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); Add shadow for depth */
+}
+ @media (max-width : 768px){
+    .about-image{
+        display: none;
+    }
+ }
